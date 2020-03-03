@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-set +e
+#set +e
 
 RED="\033[0;31m"
 GREEN="\033[0;32m"
@@ -8,16 +8,6 @@ DARKYELLOW="\033[0;33m"
 CYAN="\033[0;36m"
 LIGHTGRAY="\033[0;37m"
 
-BRANCH="${TRAVIS_BRANCH:-master}"
-BRANCH_TO_TEST="${BRANCH_TO_TEST:-master}"
-# debug:
-#BRANCH_TO_TEST=$BRANCH
-
-if [ "$BRANCH" != "$BRANCH_TO_TEST" ]
-then
-  echo -e "${DARKYELLOW}Nothing to do for ${BRANCH} branch${LIGHTGRAY}"
-  exit 0
-fi
 
 sudo apt-get update -qq > /dev/null
 sudo apt-get upgrade -yqq > /dev/null
