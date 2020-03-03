@@ -1,6 +1,7 @@
-#!/bin/bash -x
+#!/bin/bash
 
 #set +e
+set -x
 
 RED="\033[0;31m"
 GREEN="\033[0;32m"
@@ -16,8 +17,8 @@ sudo apt-get install -y tree curl unzip grep
 PACKER_VERSION=1.5.4
 TERRAFORM_VERSION=0.12.21
 TFLINT_VERSION=0.14.0
-ANSIBLE_VERSION=2.9.5
-ANSIBLE_LINT_VERSION=4.2.0
+#ANSIBLE_VERSION=2.9.5
+#ANSIBLE_LINT_VERSION=4.2.0
 
 mkdir -p _tmp && cd _tmp
 
