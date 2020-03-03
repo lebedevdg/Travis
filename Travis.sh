@@ -9,9 +9,9 @@ CYAN="\033[0;36m"
 LIGHTGRAY="\033[0;37m"
 
 
-sudo apt-get update -qq > /dev/null
-sudo apt-get upgrade -yqq > /dev/null
-sudo apt-get install -yqq tree curl unzip grep > /dev/null
+#sudo apt-get update -qq > /dev/null
+#sudo apt-get upgrade -yqq > /dev/null
+sudo apt-get install -y tree curl unzip grep
 
 PACKER_VERSION=1.5.4
 TERRAFORM_VERSION=0.12.21
