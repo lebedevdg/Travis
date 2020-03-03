@@ -60,7 +60,7 @@ echo -e "${CYAN}$(ansible --version)"
 echo -e "${CYAN}$(ansible-lint --version)"
 
 echo -e "${LIGHTGRAY}"
-echo -e "${DARKYELLOW}BRANCH: ${BRANCH}"
+#echo -e "${DARKYELLOW}BRANCH: ${BRANCH}"
 
 echo -e "${LIGHTGRAY}"
 echo -e "${DARKYELLOW}$(pwd) directory tree:"
