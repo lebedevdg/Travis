@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #set +e
-set -x
+#set -x
 
 RED="\033[0;31m"
 GREEN="\033[0;32m"
@@ -9,9 +9,6 @@ DARKYELLOW="\033[0;33m"
 CYAN="\033[0;36m"
 LIGHTGRAY="\033[0;37m"
 
-
-#sudo apt-get update -qq > /dev/null
-#sudo apt-get upgrade -yqq > /dev/null
 sudo apt-get install -y tree curl unzip grep
 
 PACKER_VERSION=1.5.4
@@ -45,10 +42,6 @@ curl -OLsS https://github.com/terraform-linters/tflint/releases/download/v${TFLI
 
 cd .. && rm -rf _tmp
 
-# Install ansible and ansible-lint
-#sudo -H pip install ansible ansible-lint
-#sudo -H pip install ansible>=2.4 
-
 sudo -H pip install -q ansible>=2.4 ansible-lint==${ANSIBLE_LINT_VERSION}
 
 echo -e "${LIGHTGRAY}"
@@ -60,8 +53,6 @@ echo -e "${CYAN}$(ansible --version)"
 echo -e "${CYAN}$(ansible-lint --version)"
 
 echo -e "${LIGHTGRAY}"
-#echo -e "${DARKYELLOW}BRANCH: ${BRANCH}"
-
 echo -e "${LIGHTGRAY}"
 echo -e "${DARKYELLOW}$(pwd) directory tree:"
 echo -e "${CYAN}$(tree -d -I *otus*)"
