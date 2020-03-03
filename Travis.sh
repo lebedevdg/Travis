@@ -1,5 +1,4 @@
 #!/bin/bash
-exit 0
 
 PACKER_VERSION=1.5.4
 TERRAFORM_VERSION=0.12.21
