@@ -56,3 +56,4 @@ cd .. && rm -rf _tmp
 
 # Install ansible and ansible-lint
 sudo -H pip install -q ansible==${ANSIBLE_VERSION} ansible-lint==${ANSIBLE_LINT_VERSION}
+
