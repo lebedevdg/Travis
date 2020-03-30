@@ -190,10 +190,10 @@ else
 fi
 
 # install external ansible roles
-((all_tests_count++))
-echo -e "${DARKYELLOW}(Test ${all_tests_count}): ${CYAN}cd ansible && ansible-galaxy install -r environments/stage/requirements.yml${LIGHTGRAY}"
-test_result="$(cd ansible && ansible-galaxy install -r environments/stage/requirements.yml)"
-test_exit_code=$?
+#((all_tests_count++))
+#echo -e "${DARKYELLOW}(Test ${all_tests_count}): ${CYAN}cd ansible && ansible-galaxy install -r environments/stage/requirements.yml${LIGHTGRAY}"
+#test_result="$(cd ansible && ansible-galaxy install -r environments/stage/requirements.yml)"
+#test_exit_code=$?
 
 if [ $test_exit_code -eq 0 ]
 then
