@@ -195,14 +195,14 @@ fi
 #test_result="$(cd ansible && ansible-galaxy install -r environments/stage/requirements.yml)"
 #test_exit_code=$?
 
-if [ $test_exit_code -eq 0 ]
-then
-  ((passed_tests_count++))
-  echo -e "${GREEN}${test_result}${LIGHTGRAY}"
-else
-  ((failed_tests_count++))
-  echo -e "${RED}${test_result}${LIGHTGRAY}"
-fi
+#if [ $test_exit_code -eq 0 ]
+#then
+#  ((passed_tests_count++))
+#  echo -e "${GREEN}${test_result}${LIGHTGRAY}"
+#else
+#  ((failed_tests_count++))
+#  echo -e "${RED}${test_result}${LIGHTGRAY}"
+#fi
 
 # ansible-playbook --syntax-check
 for f in $(cd ansible/playbooks && ls *.yml)
